@@ -1,0 +1,165 @@
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.header {
+  overflow: hidden;
+  padding: 30px 20px 0 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header button, .header span{
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 9px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+  background-color: #fff;
+}
+
+.header span.logo {
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 5px;
+}
+
+.header button:hover {
+  background-color: #ddd;
+  color: black;
+  cursor: pointer;
+}
+
+.header span:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+.header-right a {
+  border: 2px outset black;
+  box-shadow: 3px 6px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+
+.header-right button {
+  border: 2px outset black;
+  box-shadow: 3px 6px;
+  margin-bottom: 10px;
+  margin-left: 15px;
+}
+#rule {
+  margin: 0 20px 0 20px;
+  border-top: 3px solid black;
+}
+
+#rule2 {
+    margin: 40px 20px 0 20px;
+    border-bottom: 3px solid black;
+}
+
+.typeremove {
+  display: none;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  
+  .header-right {
+    float: none;
+  }
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 24%;
+  margin:3px;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+  border: 2px solid black;
+}
+
+.column h5{
+    text-align: center;
+}
+  
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px 0;
+}
+
+form {
+  font-weight: 600;
+  font-size: 1em;
+}
+
+#product_form input, #product_form select{
+  margin: 20px;
+  border: 2px solid black;
+}
+
+#input1 {
+  padding-left: 7px;
+  padding-right: 7px;
+}
+
+#input2 {
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#typeswitcher, #swapswitcher, #DVD, #Furniture, #Book {
+  padding: 1em;
+  width: 26em;
+  border: 2px solid black;
+}
+
+#typeswitcher, #swapswitcher {
+  height: 10em;
+  background-color: rgb(151, 150, 150);
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column  {
+      width: 45%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column  {
+        width: 100%;
+    }
+}
