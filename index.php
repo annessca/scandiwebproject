@@ -27,7 +27,7 @@
     <div class="header">
         <span class="logo">Product List</span>
         <div class="header-right">
-            <a href="addproduct.html">ADD</a>
+            <a href="addproduct.php">ADD</a>
             <button>MASS DELETE</button>
         </div>
     </div>
@@ -114,6 +114,6 @@
         <h3>Scandiweb Test Assignment</h3>
     </div>
       
-    <script src="js/scripts.js"></script>
+    <script src="js/switch.js"></script>
 </body>
 </html>
